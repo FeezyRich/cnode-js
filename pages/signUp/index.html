@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- description -->
+  <meta name="description" content="CNode：Node.js专业中文社区" />
+  <meta name="keywords" content="nodejs, node, express, connect, socket.io" />
+  <!-- title -->
+  <title>Authorize application</title>
+  <link rel="icon" href="./img/favicon.svg" type="/image/x-icon" />
+  <!-- css -->
+  <link rel="stylesheet" href="./signUp.css">
+</head>
+
+<body>
+  <div id="header">
+    <div class="header-nodejs-logo">
+      <img src="./img/codejsLogo.jpeg" alt="">
+    </div>
+    <div class="header-connect">
+      ----
+      <div class="ok">✓</div>
+      ----
+    </div>
+    <div class="header-github-logo">
+      <img src="./img/favicon.svg" alt="">
+    </div>
+  </div>
+  <div id="title">
+    Authorize cnode
+  </div>
+  <div id="content">
+    <div class="content-item">
+      <img src="./img/userPhoto.jpeg" alt="">
+      <p>cnode by <a target="_blank" href="https://github.com/fengmk2">fengmk2</a></p>
+      <p>wants to access your urnotzzh account</p>
+    </div>
+    <div class="content-item">
+      <img src="./img/global.png" alt="">
+      <p>Public data only</p>
+      <p>Limited access to your public data</p>
+      <input type="button" value="..." id="show-btn">
+      <div id="content-show">
+        <p class="show-p">This application will be able to identify you and read public information.</p>
+        <img class="show-img" src="./img/qustion.png" alt="">
+        <a class="show-a" href="">Learn more</a>
+      </div>
+    </div>
+  </div>
+  <div id="btns">
+    <button class="cancel">Cancel</button>
+    <button class="authorize">Authorize fengmk2</button>
+    <p>Authorizing will redirect to</p>
+    <p><b>https://cnodejs.org</b></p>
+  </div>
+
+  <div id="list">
+    <div>
+      <img src="./img/ban.png" alt="">
+      <p><b>Not</b>owned or <br> operated by GitHub</p>
+    </div>
+    <div>
+      <img src="./img/time.png" alt="">
+      <p>Created <br> <b>8 years ago</b></p>
+    </div>
+    <div>
+      <img src="./img/house.png" alt="">
+      <p><b>More than 1K</b><br> GitHub users</p>
+    </div>
+  </div>
+
+  <div id="footer">
+    <a target="_blank"
+      href="https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/authorizing-oauth-apps">Learn
+      more about OAuth</a>
+  </div>
+
+  <!-- script -->
+  <script src="./showContent.js"></script>
+</body>
+
+</html>

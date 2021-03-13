@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- description -->
+  <meta name="description" content="CNode：Node.js专业中文社区" />
+  <meta name="keywords" content="nodejs, node, express, connect, socket.io" />
+  <!-- title -->
+  <title>CNode：Node.js专业中文社区</title>
+  <link rel="icon" href="../../common/img/title-icon.png" type="/image/x-icon" />
+  <!-- css -->
+  <link rel="stylesheet" href="./api.css" />
+  <link rel="stylesheet" href="../../common/common.css" />
+</head>
+
+<body>
+  <!-- header  -->
+  <div id="header" class="container-full">
+    <div class="container">
+      <a href="../index.html" class="left">
+        <img class="header-logo" src="../../common/img/nav-logo.svg" />
+      </a>
+      <form action="" class="header-search left">
+        <input type="text" />
+      </form>
+      <ul class="header-nav right">
+        <li><a href="../index.html">首页</a></li>
+        <li><a href="../start/index.html">新手入门</a></li>
+        <li><a href="../api/index.html">API</a></li>
+        <li><a href="../about/index.html">关于</a></li>
+        <li><a href="../signUp/index.html">注册</a></li>
+        <li><a href="../signIn/index.html">登录</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- main  -->
+  <div class="container-full" id="main">
+    <div class="container">
+
+      <!-- section  -->
+      <div id="section">
+        <!-- section-header -->
+        <div id="section-header">
+          <a href="../index.html">主页</a>
+          <span>/</span>
+          <span>API</span>
+        </div>
+        <!-- section-content  -->
+        <div id="section-content">
+          <p>
+            以下 api 路径均以
+            <strong><a target="_blank" href="https://cnodejs.org/api/v1">https://cnodejs.org/api/v1</a></strong> 
+            为前缀
+          </p>
+
+          <h3>主题</h3>
+          <h4>get /topics 主题首页</h4>
+          <p>接收 get 参数</p>
+          <ul>
+            <li>
+              page
+              <code>Number</code>
+              页数
+            </li>
+            <li>
+              tab
+              <code>String</code>
+              主题分类。目前有
+              <code>ask</code>
+              <code>share</code>
+              <code>job</code>
+              <code>good</code>
+            </li>
+            <li>
+              limit
+              <code>Number</code>
+              每一页的主题数量
+            </li>
+            <li>
+              mdrender
+              <code>String</code>
+              当wei
+              <code>false</code>
+              时，不渲染。默认为
+              <code>true</code>
+              ，渲染出现的所有 markdown 格式文本。
+            </li>
+          </ul>
+          <p>示例：
+            <a target="_blank" href="/api/v1/topics">/api/v1/topics</a>
+          </p>
+
+          <h4>get /messages 获取已读和未读消息</h4>
+          <p>接收 get 参数</p>
+          <ul>
+            <li>
+              accesstoken 
+              <code>String</code>
+            </li>
+            <li>
+              mdrender
+              <code>String</code>
+              当为 
+              <code>false</code>
+              时，不渲染。默认为 
+              <code>true</code>
+              ，渲染出现的所有 markdown 格式文本。
+            </li>
+          </ul>
+          <p>返回值示例</p>
+          <pre>
+<code>{
+  data: {
+    has_read_messages: [],
+    hasnot_read_messages: [
+      {
+        id: "543fb7abae523bbc80412b26",
+        type: "at",
+        has_read: false,
+        author: {
+          loginname: "alsotang",
+          avatar_url: "https://avatars.githubusercontent.com/u/1147375?v=2"
+        },
+        topic: {
+          id: "542d6ecb9ecb3db94b2b3d0f",
+          title: "adfadfadfasdf",
+          last_reply_at: "2014-10-18T07:47:22.563Z"
+        },
+        reply: {
+          id: "543fb7abae523bbc80412b24",
+          content: "[@alsotang](/user/alsotang) 哈哈",
+          ups: [ ],
+          create_at: "2014-10-16T12:18:51.566Z"
+          }
+        },
+    ...
+    ]
+  }
+}</code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- footer  -->
+  <div id="footer" class="container-full">
+    <div class="container">
+      <div class="footer-links">
+        <a href="https://cnodejs.org/rss" target="-blank">RSS</a>｜<a href="https://github.com/cnodejs/nodeclub/"
+          target="-blank">源码地址</a>
+      </div>
+      <div class="footer-content">
+        <p>
+          CNode 社区为国内最专业的 Node.js 开源技术社区，致力于 Node.js
+          的技术研究。
+        </p>
+        <p>
+          服务器搭建在
+          <a href="https://www.digitalocean.com/?refcode=eba02656eeb3" target="-blank"><img
+              src="../../common/img/digitalocean.png" alt="digitalocean" title="digitalocean" /></a>
+          ，存储赞助商为
+          <a href="http://www.qiniu.com/?ref=cnode" target="-blank"><img src="../../common/img/qiniu.png" alt="七牛云存储"
+              title="七牛云存储" /></a>
+        </p>
+        <p>
+          新手搭建 Node.js 服务器，推荐使用无需备案的
+          <a href="https://www.digitalocean.com/">DigitalOcean(https://www.digitalocean.com/)</a>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- to-top  -->
+  <div id="to-top" class="totop-none">回到顶部</div>
+
+  <!-- script -->
+  <script src="../../common/toTop.js"></script>
+</body>
+
+</html>

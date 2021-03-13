@@ -1,0 +1,93 @@
+.aside-about-list p {
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 26px;
+  color: #333;
+}
+.aside-about-list ul {
+  margin-left: 25px;
+}
+.aside-about-list li {
+  font-size: 13px;
+  line-height: 26px;
+  list-style-type: disc;
+  color: #333;
+}
+
+.section-content-form {
+  margin: 40px 0 0 0;
+  font-size: 14px;
+  line-height: 20px;
+}
+.section-content-form div {
+  margin-bottom: 20px;
+}
+.section-content-form label {
+  width: 165px;
+  height: 20px;
+  padding: 5px 0;
+  display: inline-block;
+  text-align: right;
+}
+.section-content-form .input {
+  margin-left: 15px;
+  width: 270px;
+  height: 20px;
+  padding: 4px 6px;
+  border: 1px solid #c3c3c3;
+  border-radius: 4px;
+}
+.section-content-form .input:focus {
+  box-shadow: 1px 1px 6px #6cb6ef;
+  transition: box-shadow 0.5s;
+  outline: none;
+}
+.section-content-form .btns {
+  line-height: 28px;
+  margin: 40px 0 40px 185px;
+}
+.section-content-form .signbtn {
+  display: inline-block;
+  border-radius: 3px;
+  border: 0;
+  width: 52px;
+  height: 34px;
+  padding: 3px 10px;
+  background-color: #0288cc;
+  color: #fff;
+  transition: 0.5s;
+  margin-top: 1px;
+}
+.section-content-form .signbtn:hover {
+  background-color: #0055cc;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.section-content-form a:first-of-type {
+  font-size: 14px;
+  line-height: 28px;
+  letter-spacing: 2px;
+  color: #fff;
+  background-color: #5cc0df;
+  padding: 3px 10px;
+  border-radius: 3px;
+  display: inline-block;
+  transition: background-color 0.5s;
+  cursor: pointer;
+}
+.section-content-form a:first-of-type:hover {
+  background-color: #3096b4;
+  transition: 0.5s;
+}
+.section-content-form a:last-of-type {
+  margin-left: 14px;
+  color: #778087;
+}
+.section-content-form a:last-of-type:hover {
+  text-decoration: underline;
+}
+
+#footer {
+  position: absolute;
+  bottom: 0;
+}

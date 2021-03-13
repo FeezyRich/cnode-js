@@ -1,0 +1,26 @@
+#section-content p {
+  margin: 15px 0;
+  font-size: 15px;
+  line-height: 25.5px;
+}
+#section-content a {
+  color: #0288cc;
+}
+#section-content a:hover {
+  text-decoration: underline;
+}
+#section-content h3 {
+  font-size: 24.5px;
+  line-height: 40px;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #eee;
+}
+#section-content h3:first-of-type {
+  margin-top: 0;
+}
+
+#footer {
+  position: absolute;
+  bottom: 0;
+}

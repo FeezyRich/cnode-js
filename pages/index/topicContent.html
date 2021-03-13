@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- description -->
+  <meta name="description" content="CNode：Node.js专业中文社区" />
+  <meta name="keywords" content="nodejs, node, express, connect, socket.io" />
+  <!-- title -->
+  <title>Node.js 新手入门 - CNode技术社区</title>
+  <link rel="icon" href="../../common/img/title-icon.png" type="/image/x-icon" />
+  <!-- css -->
+  <link rel="stylesheet" href="../../common/common.css" />
+</head>
+
+<body>
+  <!-- header  -->
+  <div id="header" class="container-full">
+    <div class="container">
+      <a href="../index.html" class="left">
+        <img class="header-logo" src="../../common/img/nav-logo.svg" />
+      </a>
+      <form action="" class="header-search left">
+        <input type="text" />
+      </form>
+      <ul class="header-nav right">
+        <li><a href="../index.html">首页</a></li>
+        <li><a href="../start/index.html">新手入门</a></li>
+        <li><a href="../api/index.html">API</a></li>
+        <li><a href="../about/index.html">关于</a></li>
+        <li><a href="../signUp/index.html">注册</a></li>
+        <li><a href="../signIn/index.html">登录</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- main  -->
+  <div class="container-full" id="main">
+    <div class="container">
+      <!-- aside  -->
+      <div id="aside" class="right">
+        <!-- 个人信息 -->
+        <div class="aside-personalInfor">
+          <div class="aside-title">个人信息</div>
+          <div class="aside-personalInfor-list aside-list">
+            <a href="./personalHomepage.html">
+              <img src="./img/5453359.png" alt="">
+            </a>
+            <span>
+              <a id="user-name" href="./personalHomepage.html"></a>
+            </span>
+            <p id="user-rank"></p>
+            <p>“ 前端菜鸡。 ”</p>
+          </div>
+        </div>
+
+
+        <!-- 作者其他话题 -->
+        <div id="other-topic">
+          <div id="other-topic-head">
+
+          </div>
+          <div class="aside-list" id="other-topic-list">
+            <!-- 动态渲染 -->
+          </div>
+        </div>
+
+        <!-- 无人回复的话题 -->
+        <div class="aside-noresp">
+          <div class="aside-title">
+            <p>无人回复的话题</p>
+          </div>
+          <div class="aside-list" id="aside-noresp-list">
+            <!-- 动态插入 -->
+          </div>
+        </div>
+      </div>
+
+
+      <!-- section  -->
+      <div id="section">
+        <div id="topic-inner">
+          <div id="topic-title">
+            <!-- 动态请求 -->
+          </div>
+          <div id="topic-content">
+            <!-- 动态请求 -->
+          </div>
+        </div>
+        <div id="reply-inner">
+          <div id="reply-head">
+            <!-- 动态请求 -->
+          </div>
+          <div id="reply-content-list">
+            <!-- 动态请求 -->
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- footer  -->
+    <div id="footer" class="container-full">
+      <div class="container">
+        <div class="footer-links">
+          <a href="https://cnodejs.org/rss" target="-blank">RSS</a>｜<a href="https://github.com/cnodejs/nodeclub/"
+            target="-blank">源码地址</a>
+        </div>
+        <div class="footer-content">
+          <p>
+            CNode 社区为国内最专业的 Node.js 开源技术社区，致力于 Node.js
+            的技术研究。
+          </p>
+          <p>
+            服务器搭建在
+            <a href="https://www.digitalocean.com/?refcode=eba02656eeb3" target="-blank"><img
+                src="../../common/img/digitalocean.png" alt="digitalocean" title="digitalocean" /></a>
+            ，存储赞助商为
+            <a href="http://www.qiniu.com/?ref=cnode" target="-blank"><img src="../../common/img/qiniu.png" alt="七牛云存储"
+                title="七牛云存储" /></a>
+          </p>
+          <p>
+            新手搭建 Node.js 服务器，推荐使用无需备案的
+            <a href="https://www.digitalocean.com/">DigitalOcean(https://www.digitalocean.com/)</a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- to-top  -->
+    <div id="to-top" class="totop-none">回到顶部</div>
+
+    <!-- script -->
+    <script src="../../common/ajax.js"></script>
+    <script src="../../common/getDate.js"></script>
+    <script src="./getTopicContent.js"></script>
+    <script src="./getUserInformation.js"></script>
+    <script src="./getNoresp.js"></script>
+    <script src="../../common/toTop.js"></script>
+</body>
+
+</html>
