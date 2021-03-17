@@ -9,7 +9,7 @@ myAjax({
     var user = []
     for (var i = 0, len = data.length; i < len; i++) {
       if (data[i].reply_count == 0) {
-        list += `<a class="no-reply" href="/Users/urnotzzh/Desktop/prot/Node.js专业中文社区/pages/index/topicContent.html">${data[i].title}</a>`;
+        list += `<a class="no-reply" href="./pages/index/topicContent.html">${data[i].title}</a>`; //TODO 跳转路径
         topic.push(data[i].id);
         user.push(data[i].author.loginname)
       }

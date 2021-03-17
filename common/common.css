@@ -52,7 +52,7 @@ body {
 }
 
 /* header */
-#header {
+header {
   overflow: hidden;
   background-color: #444;
 }
@@ -97,16 +97,16 @@ body {
 }
 
 /* main */
-#main {
+main {
   background-color: #e1e1e1;
 }
-#main .container {
+.container {
   padding: 15px 0;
   overflow: hidden;
 }
 
 /* section-header  */
-#section {
+section {
   margin-right: 303px;
 }
 #section-header,
@@ -233,7 +233,7 @@ body {
   min-width: 50px;
 }
 /* aside  */
-#aside {
+aside {
   width: 290px;
 }
 .aside-title {
@@ -255,7 +255,7 @@ body {
 }
 
 /* 登录  */
-#aside .aside-login {
+aside .aside-login {
   width: 270px;
   padding: 10px;
   background-color: #fff;
@@ -489,12 +489,12 @@ body {
   margin: 10px 0;
   color: #ababab;
 }
-#section .more {
+section .more {
   padding: 10px;
   background-color: #fff;
   border-top: 1px solid #f0f0f0;
 }
-#section .more a {
+section .more a {
   font-size: 14px;
   line-height: 20px;
   color: #686868;
@@ -530,11 +530,10 @@ body {
 }
 
 /* footer */
-#footer {
-  min-height: 195px;
+footer {
   background-color: #fff;
 }
-#footer .container {
+footer .container {
   padding: 20px 0;
 }
 .footer-links {
@@ -563,6 +562,12 @@ body {
   color: #08c;
 }
 
+/* footer吸底 */
+html{height:100%;}
+body{min-height:100%;position:relative;}
+main{padding-bottom:210px;}
+footer{position:absolute;bottom:0;width:100%;height:195px;}
+
 /* 回到顶部 */
 #to-top {
   width: 24px;
@@ -589,19 +594,20 @@ body {
 }
 
 @media (max-width: 1270px) {
-  #footer {
+  footer {
     display: none;
   }
-  #aside {
+  aside {
     display: none;
   }
-  #section {
+  section {
     margin-right: 0;
   }
-  #main .container {
+  main .container {
     width: 96%;
   }
   .header-nav {
     float: left;
   }
 }
+
