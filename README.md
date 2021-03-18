@@ -7,7 +7,7 @@
 HTML\CSS\JavaScript
 
 启动项目：
-入口：pages/index.html
+入口：pages/index/index.html
 
 实现功能：
 1）使用Ajax分页请求数据;
@@ -15,6 +15,7 @@ HTML\CSS\JavaScript
 3）动态创建分页按钮；
 4）使用localstorage存储数据，实现页面间的数据传递；
 5）回到顶部按钮。
+6) 实现响应式布局，并适配移动端。
 
 注：1、源网站仅提供部分API，故部分页面数据无法展示；2、该项目正在持续优化中。
 
