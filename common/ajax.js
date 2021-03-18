@@ -8,15 +8,15 @@ function myAjax(opt) {
   opt.dataType = opt.dataType || 'JSON';
   opt.success = opt.success || function () { };
 
-  var xmlHttp = null;
+  let xmlHttp = null;
   xmlHttp = XMLHttpRequest ? new XMLHttpRequest() : new ActiveXObject('Microsoft.XMLHTTP');
 
-  var params = [];
-  for (var key in opt.data) {
+  let params = [];
+  for (let key in opt.data) {
     params.push(key + '=' + opt.data[key]);
   }
 
-  var postData = params.join('&');
+  let postData = params.join('&');
   if (opt.dataType === 'JSONP') {
     creatScript(opt.url, postData);
   }
@@ -40,7 +40,7 @@ function myAjax(opt) {
 }
 
 function creatScript(url, data) {
-  var oScript = document.createElement(script);
+  let oScript = document.createElement(script);
   oScript.src = url + '?' + data + '&callback=getEn';
   document.body.appendChild(oScript);
 }

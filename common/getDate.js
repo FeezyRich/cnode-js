@@ -1,8 +1,8 @@
 //功能：距离现在时间换算
 function getDate(date) {
-  var time = Date.parse(new Date());
-  var lasttime = Date.parse(date);
-  var day = (time - lasttime) / 1000;
+  let time = Date.parse(new Date());
+  let lasttime = Date.parse(date);
+  let day = (time - lasttime) / 1000;
   if (day < 60) {
     return day = `${parseInt(day)}秒钟前`;
   }
